@@ -180,3 +180,49 @@
     margin-top: 1px; 
     border-radius: 5px; 
     }
+
+     /* FOOTER */
+
+.footer{
+    width: 100%;
+    color: #353232;
+  }
+  
+  .container-body{
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    background-color: rgb(199, 187, 209);
+
+
+    & h2{
+        font-family: 'Chela One', cursive;
+        font-size: 30px;
+        font-weight: 600px;
+        width: 100%;
+        padding: 5px;
+        color: black;  
+    }
+  }
+  
+  
+  .seguinos img{
+    cursor: pointer;
+    size: 20px;
+  }
+  
+  .container-footer{
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    background-color: #353232;
+    color:black;
+
+    & .informacion{
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        background-color: #353232;
+        color:black;
+    }
+  }
