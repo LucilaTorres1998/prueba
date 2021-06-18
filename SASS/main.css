@@ -1,6 +1,4 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Chela+One&display=swap");
 * {
   margin: 0;
   padding: 0%;
@@ -252,5 +250,64 @@ nav, .navbar-brand {
   text-decoration: none;
   background-color: #353232;
   color: black;
+}
+
+/* DESTINO ELEGIDO */
+.textos {
+  padding-top: 20px;
+  padding-left: 60px;
+  background-color: #e4e4e4;
+}
+
+.textos h3 {
+  text-align: center;
+  font-family: 'Chela One', cursive;
+  font-size: 30px;
+  color: #ec8937;
+}
+
+.textos p {
+  font-family: 'Roboto', sans-serif;
+  padding-left: 60px;
+}
+
+.textos li {
+  list-style: none;
+  font-family: 'Roboto', sans-serif;
+  padding-left: 60px;
+}
+
+.mapa {
+  background-color: #e4e4e4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.texto-mapa {
+  text-align: center;
+  /* PROBLEMA */
+}
+
+.texto-mapa h4 {
+  text-decoration: none;
+  font-family: 'Chela One', cursive;
+  font-size: 30px;
+  padding-top: 40px;
+  color: #ec8937;
+}
+
+.texto-mapa li {
+  list-style: none;
+  font-family: 'Roboto', sans-serif;
 }
 /*# sourceMappingURL=main.css.map */

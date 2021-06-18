@@ -226,3 +226,58 @@
         color:black;
     }
   }
+
+  /* DESTINO ELEGIDO */
+
+.textos{
+    padding-top: 20px;
+    padding-left: 60px;
+    background-color: #e4e4e4;
+
+    & h3{
+        text-align: center;
+        font-family: 'Chela One', cursive;
+        font-size: 30px;
+        color: #ec8937; 
+    }
+
+    & p{
+        font-family: 'Roboto', sans-serif;
+        padding-left: 60px;
+    }
+
+    & li{
+        list-style: none;
+        font-family: 'Roboto', sans-serif;
+        padding-left: 60px;
+    }
+  }
+  
+  .mapa{
+    background-color: #e4e4e4;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  
+
+  .texto-mapa{
+      text-align: center;
+      
+      
+      /* PROBLEMA */
+      & h4{
+    text-decoration: none;
+    font-family: 'Chela One', cursive;
+    font-size: 30px;
+    padding-top: 40px;;
+    color: #ec8937;
+  }
+  
+  & li{
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+  }
+}
