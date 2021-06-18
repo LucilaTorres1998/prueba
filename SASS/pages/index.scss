@@ -281,3 +281,189 @@
     font-family: 'Roboto', sans-serif;
   }
 }
+
+
+/* INFORMACIÓN */
+
+/* -nros- */
+.informacion{
+    background-color: #e4e4e4;
+
+    & .carta{
+        margin-top: 90px;
+    }
+
+    & img{
+        margin-top: 50px;
+        height: 300px;
+    }
+
+    & h3{
+        font-family: 'Chela One', cursive;
+        font-size: 30px;
+        font-weight: 600px;
+        margin-top: 50px;
+        width: 100%;
+        padding: 5px;
+        color: rgb(177, 137, 209);
+    }
+
+    & li{
+        font-family: 'Roboto', sans-serif;
+        color: rgb(177, 137, 209);
+        font-size: 18px;
+    }
+  }
+  
+  /* -clima- */
+  .clima{
+    padding-top: 50px;
+    background-color: #e4e4e4;
+
+    & h3{
+        font-family: 'Chela One', cursive;
+        font-size: 30px;
+        font-weight: 600px;
+        width: 100%;
+        padding: 5px;
+        color: #ec8937; 
+    }
+
+    & li{
+        font-family: 'Roboto', sans-serif;
+        color: #ec8937;
+        padding-bottom: 10px; 
+        font-size: 18px;
+    }
+
+    & img{
+        height: 400px; 
+    }
+  }
+  
+  /* -turista- */
+  .turista{
+    padding-top: 50px;
+    background-color:#e4e4e4;
+
+    & img{
+        height: 300px;
+    }
+
+    & h3{
+        font-family: 'Chela One', cursive;
+        font-size: 30px;
+        font-weight: 600px;
+        margin-top: 30px;
+        width: 100%;
+        padding: 5px;
+        color: rgb(177, 137, 209);  
+    }
+
+    & li{
+        font-family: 'Roboto', sans-serif;
+        color: rgb(177, 137, 209);
+        font-size: 18px;
+
+        & .apps{
+            list-style: none;
+        }
+    }
+  } 
+  
+  /* -sube- */
+  .sube{
+    padding-top: 50px;
+    background-color: #e4e4e4;
+
+    & img{
+        height: 300px;
+    }
+
+    & h3{
+        font-family: 'Chela One', cursive;
+        font-size: 30px;
+        font-weight: 600px;
+        margin-top: 50px;
+        width: 100%;
+        padding: 5px;
+        color: #ec8937;
+    }
+
+    & p{
+        font-family: 'Roboto', sans-serif;
+        color: #ec8937;
+        font-size: 18px;
+        padding-bottom: 30px;
+    }
+
+    & h4{
+        font-family: 'Chela One', cursive;
+    }
+
+    & li{
+        font-family: 'Roboto', sans-serif;
+        color: #ec8937;
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+  }
+
+  /* CONTACTO */
+
+/* form */
+.contacto{
+    background-color:  rgb(192, 184, 199);
+    padding: 20px;
+  }
+  form{
+    width: 450px;
+    margin: auto;
+    background: #ee8a38;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    margin-top: 90px;
+    margin-bottom: 20px;
+    border-radius: 7px;
+  }
+  
+  h2{
+    color: white;
+    text-align: center;
+    margin: 0%;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  h3{
+    color: white;
+    margin: 0%;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    border: none;
+  }
+  
+  textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+  }
+  
+  #boton{
+    background-color: #ba7bd3;
+    border: none;
+    padding: 10px;
+  
+  }
+  
+  #boton:hover{
+    cursor: pointer;
+  }
+  
