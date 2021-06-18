@@ -1,0 +1,47 @@
+.bg-purple {
+  background-color: #c7bbd1;
+}
+
+nav, .navbar-brand {
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50px;
+          flex: 1 0 50px;
+  color: rgba(202, 180, 180, 0.747);
+  font-size: 20px;
+  padding: 10px;
+}
+
+.dropdown-menu li {
+  font-size: 20px;
+}
+
+/* HERO */
+.padre1 {
+  margin-top: 60px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-image: url(/multimedia/sdvdfz.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hijo1 h2 {
+  margin-top: 50px;
+  text-align: center;
+  font-family: 'Chela One', cursive;
+  font-size: 60px;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.911);
+}
+
+.hijo1 p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0.911);
+  background-color: #413f4242;
+}
+/*# sourceMappingURL=index.css.map */
