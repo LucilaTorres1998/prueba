@@ -1,3 +1,21 @@
+@mixin backgroung-and-size ($bg-color, $size) { 
+  background-color: $bg-color;
+  font-size: $size;
+  padding: 50px;
+}
+
+@mixin size-font-margin-padding  {
+  font-family: 'Chela One', cursive;
+  font-size: 30px;
+  font-weight: 600px;
+  margin-top: 50px;
+  width: 100%;
+  padding: 5px;
+}
+
+
+ /* NAV-BAR */
+
 .bg-purple{
     background-color: rgb(199, 187, 209);
   }
@@ -6,7 +24,7 @@
     width: 100%;
     flex: 1 0 50px; 
     color: rgba(202, 180, 180, 0.747); 
-    font-size: 20px ;
+    font-size: $size *5;
     padding: 10px;
   }
 
@@ -17,7 +35,6 @@
  /* HERO */
 
 .padre1{
-    margin-top: 60px;
     display: grid; 
     place-items: center; 
     height: 100vh; 
@@ -109,24 +126,27 @@
       position: absolute;
       width: 100%;
       height: 100%;
-      background: rgba(199, 187, 209, 0.637);
+      text-decoration: none;
+      background: rgba(59, 5, 104, 0.815);
       transform: scale(0);
       transition: transform .5s;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      color: rgba(255, 255, 255, 0.747);
+      color: rgba(255, 255, 255, 0.856);
       top:0%;
-   
-    /* ¡¡PROBLEMA!! */
-      & h3{
+
+
+      & a{
         text-decoration: none;
-        color: rgba(255, 255, 255, 0.747);
+        font-size: $size *7;
+        color: $naranja-textos;
         font-family: 'Roboto', sans-serif;
       }
-
     }
+   
+
    
     
     
@@ -151,7 +171,7 @@
       }
 
       & .carta{
-        background-color: rgba(199, 187, 209, 0.438);
+        background-color: rgba(199, 187, 209, 0.815);
         padding: 1rem; 
         margin: 5px;
         text-align: center; 
@@ -160,16 +180,9 @@
 
       & h3{
         text-align: center;
-        color: rgba(255, 255, 255, 0.747); 
+        color: rgb(63, 56, 56); 
         font-family: 'Chela One', cursive;
         font-size: 30px;
-        margin: 10px;
-      }
-
-      & p{
-        color: rgba(255, 255, 255, 0.747); 
-        font-family: 'Roboto', sans-serif;
-        font-size: 18px;
         margin: 10px;
       }
     }
@@ -232,13 +245,13 @@
 .textos{
     padding-top: 20px;
     padding-left: 60px;
-    background-color: #e4e4e4;
+    background-color: $bg-color;
 
     & h3{
         text-align: center;
         font-family: 'Chela One', cursive;
         font-size: 30px;
-        color: #ec8937; 
+        color: $naranja-textos; 
     }
 
     & p{
@@ -254,7 +267,7 @@
   }
   
   .mapa{
-    background-color: #e4e4e4;
+    background-color: $bg-color;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -265,15 +278,20 @@
 
   .texto-mapa{
       text-align: center;
-      
-      
-      /* PROBLEMA */
-      & h4{
-    text-decoration: none;
+  & h3{
+    text-align: center;
     font-family: 'Chela One', cursive;
     font-size: 30px;
+    color: $naranja-textos; 
+  }
+
+
+  & a{
+    text-decoration: none;
+    font-family: 'Chela One', cursive;
+    font-size: 20px;
     padding-top: 40px;;
-    color: #ec8937;
+    color: $naranja-textos;
   }
   
   & li{
@@ -287,7 +305,7 @@
 
 /* -nros- */
 .informacion{
-    background-color: #e4e4e4;
+  @include backgroung-and-size($bg-color, 5px);
 
     & .carta{
         margin-top: 90px;
@@ -299,39 +317,30 @@
     }
 
     & h3{
-        font-family: 'Chela One', cursive;
-        font-size: 30px;
-        font-weight: 600px;
-        margin-top: 50px;
-        width: 100%;
-        padding: 5px;
-        color: rgb(177, 137, 209);
+      @include size-font-margin-padding();
+        color: $lila-textos;
     }
 
     & li{
         font-family: 'Roboto', sans-serif;
-        color: rgb(177, 137, 209);
+        color: $lila-textos;
         font-size: 18px;
     }
   }
   
   /* -clima- */
   .clima{
-    padding-top: 50px;
-    background-color: #e4e4e4;
+    @include backgroung-and-size($bg-color, 5px);
+
 
     & h3{
-        font-family: 'Chela One', cursive;
-        font-size: 30px;
-        font-weight: 600px;
-        width: 100%;
-        padding: 5px;
-        color: #ec8937; 
+      @include size-font-margin-padding();
+        color: $naranja-textos; 
     }
 
     & li{
         font-family: 'Roboto', sans-serif;
-        color: #ec8937;
+        color: $naranja-textos;
         padding-bottom: 10px; 
         font-size: 18px;
     }
@@ -343,26 +352,20 @@
   
   /* -turista- */
   .turista{
-    padding-top: 50px;
-    background-color:#e4e4e4;
+    @include backgroung-and-size($bg-color, 5px);
 
     & img{
         height: 300px;
     }
 
     & h3{
-        font-family: 'Chela One', cursive;
-        font-size: 30px;
-        font-weight: 600px;
-        margin-top: 30px;
-        width: 100%;
-        padding: 5px;
-        color: rgb(177, 137, 209);  
+      @include size-font-margin-padding();
+        color: $lila-textos;  
     }
 
     & li{
         font-family: 'Roboto', sans-serif;
-        color: rgb(177, 137, 209);
+        color: $lila-textos;
         font-size: 18px;
 
         & .apps{
@@ -373,26 +376,20 @@
   
   /* -sube- */
   .sube{
-    padding-top: 50px;
-    background-color: #e4e4e4;
+    @include backgroung-and-size($bg-color, 5px);
 
     & img{
         height: 300px;
     }
 
     & h3{
-        font-family: 'Chela One', cursive;
-        font-size: 30px;
-        font-weight: 600px;
-        margin-top: 50px;
-        width: 100%;
-        padding: 5px;
-        color: #ec8937;
+      @include size-font-margin-padding();
+        color: $naranja-textos;
     }
 
     & p{
         font-family: 'Roboto', sans-serif;
-        color: #ec8937;
+        color: $naranja-textos;
         font-size: 18px;
         padding-bottom: 30px;
     }
@@ -403,7 +400,7 @@
 
     & li{
         font-family: 'Roboto', sans-serif;
-        color: #ec8937;
+        color: $naranja-textos;
         font-size: 18px;
         padding-bottom: 10px;
     }
@@ -419,7 +416,7 @@
   form{
     width: 450px;
     margin: auto;
-    background: #ee8a38;
+    background: $naranja-textos;
     padding: 30px 20px;
     box-sizing: border-box;
     margin-top: 90px;
@@ -457,7 +454,7 @@
   }
   
   #boton{
-    background-color: #ba7bd3;
+    background-color: $lila-textos;
     border: none;
     padding: 10px;
   

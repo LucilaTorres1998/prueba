@@ -13,6 +13,7 @@ body {
   background-color: #e4e4e4;
 }
 
+/* NAV-BAR */
 .bg-purple {
   background-color: #c7bbd1;
 }
@@ -23,7 +24,7 @@ nav, .navbar-brand {
       -ms-flex: 1 0 50px;
           flex: 1 0 50px;
   color: rgba(202, 180, 180, 0.747);
-  font-size: 20px;
+  font-size: 25px;
   padding: 10px;
 }
 
@@ -33,7 +34,6 @@ nav, .navbar-brand {
 
 /* HERO */
 .padre1 {
-  margin-top: 60px;
   display: -ms-grid;
   display: grid;
   place-items: center;
@@ -126,7 +126,8 @@ nav, .navbar-brand {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(199, 187, 209, 0.637);
+  text-decoration: none;
+  background: rgba(59, 5, 104, 0.815);
   -webkit-transform: scale(0);
           transform: scale(0);
   -webkit-transition: -webkit-transform .5s;
@@ -146,14 +147,14 @@ nav, .navbar-brand {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  color: rgba(255, 255, 255, 0.747);
+  color: rgba(255, 255, 255, 0.856);
   top: 0%;
-  /* ¡¡PROBLEMA!! */
 }
 
-.hover-galeria h3 {
+.hover-galeria a {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.747);
+  font-size: 35px;
+  color: #ec8937;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -180,7 +181,7 @@ nav, .navbar-brand {
 }
 
 .servicios .carta {
-  background-color: rgba(199, 187, 209, 0.438);
+  background-color: rgba(199, 187, 209, 0.815);
   padding: 1rem;
   margin: 5px;
   text-align: center;
@@ -189,16 +190,9 @@ nav, .navbar-brand {
 
 .servicios h3 {
   text-align: center;
-  color: rgba(255, 255, 255, 0.747);
+  color: #3f3838;
   font-family: 'Chela One', cursive;
   font-size: 30px;
-  margin: 10px;
-}
-
-.servicios p {
-  color: rgba(255, 255, 255, 0.747);
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
   margin: 10px;
 }
 
@@ -295,13 +289,19 @@ nav, .navbar-brand {
 
 .texto-mapa {
   text-align: center;
-  /* PROBLEMA */
 }
 
-.texto-mapa h4 {
-  text-decoration: none;
+.texto-mapa h3 {
+  text-align: center;
   font-family: 'Chela One', cursive;
   font-size: 30px;
+  color: #ec8937;
+}
+
+.texto-mapa a {
+  text-decoration: none;
+  font-family: 'Chela One', cursive;
+  font-size: 20px;
   padding-top: 40px;
   color: #ec8937;
 }
@@ -315,6 +315,8 @@ nav, .navbar-brand {
 /* -nros- */
 .informacion {
   background-color: #e4e4e4;
+  font-size: 5px;
+  padding: 50px;
 }
 
 .informacion .carta {
@@ -344,14 +346,16 @@ nav, .navbar-brand {
 
 /* -clima- */
 .clima {
-  padding-top: 50px;
   background-color: #e4e4e4;
+  font-size: 5px;
+  padding: 50px;
 }
 
 .clima h3 {
   font-family: 'Chela One', cursive;
   font-size: 30px;
   font-weight: 600px;
+  margin-top: 50px;
   width: 100%;
   padding: 5px;
   color: #ec8937;
@@ -370,8 +374,9 @@ nav, .navbar-brand {
 
 /* -turista- */
 .turista {
-  padding-top: 50px;
   background-color: #e4e4e4;
+  font-size: 5px;
+  padding: 50px;
 }
 
 .turista img {
@@ -382,7 +387,7 @@ nav, .navbar-brand {
   font-family: 'Chela One', cursive;
   font-size: 30px;
   font-weight: 600px;
-  margin-top: 30px;
+  margin-top: 50px;
   width: 100%;
   padding: 5px;
   color: #b189d1;
@@ -400,8 +405,9 @@ nav, .navbar-brand {
 
 /* -sube- */
 .sube {
-  padding-top: 50px;
   background-color: #e4e4e4;
+  font-size: 5px;
+  padding: 50px;
 }
 
 .sube img {
@@ -446,7 +452,7 @@ nav, .navbar-brand {
 form {
   width: 450px;
   margin: auto;
-  background: #ee8a38;
+  background: #ec8937;
   padding: 30px 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -486,7 +492,7 @@ textarea {
 }
 
 #boton {
-  background-color: #ba7bd3;
+  background-color: #b189d1;
   border: none;
   padding: 10px;
 }

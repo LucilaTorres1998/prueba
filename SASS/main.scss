@@ -1,5 +1,4 @@
-@import '/SASS/abstracts/variables.scss';
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Chela+One&display=swap');
-@import '/SASS/abstracts/';
-@import "pages/index.scss";
+@import "partials/variables";
+@import "partials/reset";
+@import "partials/mixins";
+@import "pages/index";
