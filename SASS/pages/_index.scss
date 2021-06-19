@@ -1,19 +1,3 @@
-@mixin backgroung-and-size ($bg-color, $size) { 
-  background-color: $bg-color;
-  font-size: $size;
-  padding: 50px;
-}
-
-@mixin size-font-margin-padding  {
-  font-family: 'Chela One', cursive;
-  font-size: 30px;
-  font-weight: 600px;
-  margin-top: 50px;
-  width: 100%;
-  padding: 5px;
-}
-
-
  /* NAV-BAR */
 
 .bg-purple{
@@ -24,8 +8,8 @@
     width: 100%;
     flex: 1 0 50px; 
     color: rgba(202, 180, 180, 0.747); 
-    font-size: $size *5;
-    padding: 10px;
+    font-size: $size *4;
+    padding: $size * 2;
   }
 
   .dropdown-menu li{
@@ -35,6 +19,7 @@
  /* HERO */
 
 .padre1{
+    margin-top: 50px;
     display: grid; 
     place-items: center; 
     height: 100vh; 
@@ -49,16 +34,16 @@
     & h2 {
         margin-top: 50px; 
         text-align: center;
-        font-family: 'Chela One', cursive;
-        font-size: 60px;
+        font-family: $chela;
+        font-size: $size * 12;
         letter-spacing: 2px;
-        color: rgba(255, 255, 255, 0.911);
+        color: rgb(255, 255, 255);
     }
   
     & p{
-        font-family: 'Roboto', sans-serif;
-        font-size: 25px;
-        color: rgba(255, 255, 255, 0.911); 
+        font-family: $roboto;
+        font-size: $size * 5;
+        color: rgb(255, 255, 255); 
         background-color: #413f4242;  
     }
 
@@ -74,26 +59,28 @@
         flex-direction: column; 
         text-align: center; 
         padding: 5 1px;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-top: $size * 4;
+        margin-bottom: $size * 4;
         border-radius: 8px;
     }
 
     & h3{
        color:rgba(255, 255, 255, 0.747);
+       font-family: $roboto;
         padding-bottom: 1px;
-        font-size: 20px;
+        font-size: $size * 6;
     }
 
     & p{
-        color: rgba(255, 255, 255, 0.747); 
+        color: rgba(255, 255, 255, 0.747);
+        font-family: $roboto; 
         padding-bottom: 1px;
-        font-size: 15px;
+        font-size: $size * 4;
     }
 
   .carta img{
    width: 80%;
-   margin-top: 15px;  
+   margin-top: $size * 5;  
   }
 
 }
@@ -117,7 +104,7 @@
 
     & h3{
         color: white;
-        font-family: 'Roboto', sans-serif;
+        font-family: $roboto;
     }
     }
     
@@ -142,7 +129,7 @@
         text-decoration: none;
         font-size: $size *7;
         color: $naranja-textos;
-        font-family: 'Roboto', sans-serif;
+        font-family: $roboto;
       }
     }
    
@@ -160,10 +147,10 @@
       background-position: center; 
       background-repeat: no-repeat; 
       background-size: cover; 
-      padding: 30px;
+      padding: $size * 6;
 
       & h2{
-        font-family: 'Chela One', cursive;
+        font-family: $chela;
         text-align: center;
         color: rgba(255, 255, 255, 0.747); 
         font-size: 50px;
@@ -173,17 +160,17 @@
       & .carta{
         background-color: rgba(199, 187, 209, 0.815);
         padding: 1rem; 
-        margin: 5px;
+        margin: $size;
         text-align: center; 
-        border-radius: 5px;
+        border-radius: $size;
       }
 
       & h3{
         text-align: center;
         color: rgb(63, 56, 56); 
-        font-family: 'Chela One', cursive;
-        font-size: 30px;
-        margin: 10px;
+        font-family: $chela;
+        font-size: $size * 6;
+        margin: $size * 2;
       }
     }
     
@@ -191,13 +178,14 @@
     width: 100%;
     height: 250px;
     margin-top: 1px; 
-    border-radius: 5px; 
+    border-radius: $size; 
     }
 
      /* FOOTER */
 
 .footer{
     width: 100%;
+    height: 60px;
     color: #353232;
   }
   
@@ -209,9 +197,8 @@
 
 
     & h2{
-        font-family: 'Chela One', cursive;
-        font-size: 30px;
-        font-weight: 600px;
+        font-family: $chela;
+        font-size: $size * 6;
         width: 100%;
         padding: 5px;
         color: black;  
@@ -221,7 +208,7 @@
   
   .seguinos img{
     cursor: pointer;
-    size: 20px;
+    size: $size * 4;
   }
   
   .container-footer{
@@ -231,38 +218,46 @@
     background-color: #353232;
     color:black;
 
+    & h3 {
+      font-family: $roboto;
+      color: $blanco-textos;
+      font-size: $size *4;
+      padding-top: 10px;
+    }
+
     & .informacion{
         width: 100%;
+        font-family: $roboto;
         text-align: center;
-        text-decoration: none;
         background-color: #353232;
         color:black;
+        font-size: $size *3;
     }
   }
 
   /* DESTINO ELEGIDO */
 
 .textos{
-    padding-top: 20px;
-    padding-left: 60px;
+    padding-top: $size * 4;
+    padding-left: $size * 6;
     background-color: $bg-color;
 
     & h3{
         text-align: center;
-        font-family: 'Chela One', cursive;
-        font-size: 30px;
+        font-family: $chela;
+        font-size: $size * 6;
         color: $naranja-textos; 
     }
 
     & p{
-        font-family: 'Roboto', sans-serif;
-        padding-left: 60px;
+        font-family: $roboto;
+        padding-left: $size * 30;
     }
 
     & li{
         list-style: none;
-        font-family: 'Roboto', sans-serif;
-        padding-left: 60px;
+        font-family: $roboto;
+        padding-left: $size * 12;
     }
   }
   
@@ -271,32 +266,32 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: $size * 6;
+    padding-bottom: $size * 6;
   }
   
 
   .texto-mapa{
       text-align: center;
-  & h3{
-    text-align: center;
-    font-family: 'Chela One', cursive;
-    font-size: 30px;
-    color: $naranja-textos; 
-  }
 
+  & h3{
+    font-family: $chela;
+    color: $naranja-textos;
+    font-size: $size *6;
+  }
 
   & a{
     text-decoration: none;
-    font-family: 'Chela One', cursive;
-    font-size: 20px;
-    padding-top: 40px;;
+    font-family: $roboto;
+    font-size: $size * 3;
+    padding-top: $size * 8;
     color: $naranja-textos;
   }
   
   & li{
     list-style: none;
-    font-family: 'Roboto', sans-serif;
+    font-family: $roboto;
+    font-size: $size *3;
   }
 }
 
@@ -312,7 +307,7 @@
     }
 
     & img{
-        margin-top: 50px;
+        margin-top: $size * 10;
         height: 300px;
     }
 
@@ -322,7 +317,7 @@
     }
 
     & li{
-        font-family: 'Roboto', sans-serif;
+        font-family: $roboto;
         color: $lila-textos;
         font-size: 18px;
     }
@@ -339,9 +334,9 @@
     }
 
     & li{
-        font-family: 'Roboto', sans-serif;
+        font-family: $roboto;
         color: $naranja-textos;
-        padding-bottom: 10px; 
+        padding-bottom: $size * 2; 
         font-size: 18px;
     }
 
@@ -364,7 +359,7 @@
     }
 
     & li{
-        font-family: 'Roboto', sans-serif;
+        font-family: $roboto;
         color: $lila-textos;
         font-size: 18px;
 
@@ -388,18 +383,18 @@
     }
 
     & p{
-        font-family: 'Roboto', sans-serif;
+        font-family: $roboto;
         color: $naranja-textos;
         font-size: 18px;
-        padding-bottom: 30px;
+        padding-bottom: $size * 6;
     }
 
     & h4{
-        font-family: 'Chela One', cursive;
+        font-family: $chela;
     }
 
     & li{
-        font-family: 'Roboto', sans-serif;
+        font-family: $roboto;
         color: $naranja-textos;
         font-size: 18px;
         padding-bottom: 10px;
@@ -411,7 +406,7 @@
 /* form */
 .contacto{
     background-color:  rgb(192, 184, 199);
-    padding: 20px;
+    padding: $size * 4;
   }
   form{
     width: 450px;
@@ -420,28 +415,29 @@
     padding: 30px 20px;
     box-sizing: border-box;
     margin-top: 90px;
-    margin-bottom: 20px;
+    margin-bottom: $size * 4;
     border-radius: 7px;
   }
   
   h2{
     color: white;
+    font-family: $chela;
     text-align: center;
     margin: 0%;
-    font-size: 30px;
-    margin-bottom: 20px;
+    font-size: $size * 6;
+    margin-bottom: $size * 2;
   }
   
   h3{
     color: white;
     margin: 0%;
-    font-size: 20px;
-    margin-bottom: 20px;
+    font-size: $size * 4;
+    margin-bottom: $size * 2;
   }
   
   input, textarea{
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: $size * 2;
     padding: 7px;
     box-sizing: border-box;
     border: none;
@@ -456,7 +452,7 @@
   #boton{
     background-color: $lila-textos;
     border: none;
-    padding: 10px;
+    padding: $size * 2;
   
   }
   
